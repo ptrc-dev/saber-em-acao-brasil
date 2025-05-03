@@ -11,7 +11,7 @@ interface LayoutProps {
 
 const Layout = ({ userType, userName }: LayoutProps) => {
   return (
-    <div className="app-container">
+    <div className="app-container min-h-screen flex flex-col">
       <Header userName={userName} />
       <div className="flex flex-1 overflow-hidden">
         <Sidebar userType={userType} />
